@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+/*============================================================
+# mixins
+=============================================================*/
+
+//ブレークポイント
+$layout-width-inner: 1200px;
+$breakpoints: (
+  'sp': '(max-width: 767px)', //767px以下（スマホ）用の表示
+  'md': '(min-width: 768px)',//767px以上
+) ;
+
+//メディアクエリ
+@mixin mq($breakpoint: sp) {
+      @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+      }
+}
+
+/*============================================================
+# colors
+=============================================================*/
+
+$primary-color: #3EA1D1;
+$font-color: #333;
+
+/*============================================================
+# common -全体に共通するスタイル
+=============================================================*/
+  @include mq('sp') {
+    .is-pc {
+      display: none;
+    }
+  }
+
+  @include mq('md') {
+    .is-sp {
+      display: none;
+    }  
+  }
+
+  .inner {
+    width: 1200px;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .mt20{
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+
+/*============================*/
+
+.bg {
+  background: url(/img/white-box-bg.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0 0 30px 0;
+}
+
+.main {
+  text-align: center;
+  padding-bottom: 50px;
+  img {
+    width: 1200px;
+    max-width: 100%;
+  }
+}
+
+.emerald-title {
+  margin-top: 80px;
+  background-image: linear-gradient(to top, #ff5858 0%, #f09819 100%);
+}
+
+.title {
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 45px;
+}
+
+.gear {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  p {
+    padding: 0;
+    font-size: 60px;
+  }
+}
+
+.gear-container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #8AC75A;
+  padding: 20px 0 20px 0;
+  border-radius: 20px;
+
+  .tr {
+    color: red;
+  }
+}
+
+.sankaku {
+  margin-top: 30px;
+}
+
+.mail {
+  font-size: 50px;
+  width: 900px;
+  margin: 0 auto;
+  background-color: #8AC75A;
+  padding: 20px 0 20px 0;
+  border-radius: 20px;
+}
+
+
+.mail-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+  .ul{
+    list-style: disc;
+    padding-left: 15px;
+  }
+
+}
+
+.text {
+  font-size: 50px;
+  width:80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px 0 20px 0;
+  border-radius: 20px;
+  border: solid 1px #333;
+  margin-bottom: 50px;
+}
+
+
+//メールフォーム
+
+.cp_iptxt {
+	width: 80%;
+  margin: 0 auto;
+}
+.cp_iptxt input[type=text] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 8px 0;
+	padding: 20px 10px;
+	transition: 0.3s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+
+
+/*  ボタン  */
+
+.gear-tiken {
+  font-size: 40px;
+
+  p {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
+.btn-square-pop {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #fd9535;/*背景色*/
+  border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+}
+
+.btn-square-pop:hover {
+  border-bottom: solid 2px #fd9535;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+.tr {
+  color: red;
+}
+
+.man {
+  margin-top: 50px;
+}
+
+.man-work {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+
+    @include mq('sp') {
+      display: block;
+    }
+}
+
+.man-work-img {
+
+  @include mq('sp') {
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 250px;
+  }
+  
+}
