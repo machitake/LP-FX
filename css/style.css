@@ -28,8 +28,18 @@
 }
 
 .mt20 {
-  margin-top: 20px;
+  padding-top: 20px;
   font-size: 30px;
+}
+
+.mt40 {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.bg-w {
+  background-color: #fff;
+  width: 1000px;
 }
 
 /*============================*/
@@ -45,6 +55,7 @@
 .main {
   text-align: center;
   padding-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .main img {
@@ -53,7 +64,6 @@
 }
 
 .emerald-title {
-  margin-top: 80px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ff5858), to(#f09819));
   background-image: linear-gradient(to top, #ff5858 0%, #f09819 100%);
 }
@@ -75,13 +85,13 @@
 
 .gear p {
   padding: 0;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .gear-container {
   width: 80%;
   margin: 0 auto;
-  background-color: #8AC75A;
+  background-color: #00d235;
   padding: 20px 0 20px 0;
   border-radius: 20px;
 }
@@ -95,10 +105,10 @@
 }
 
 .mail {
-  font-size: 50px;
-  width: 900px;
+  font-size: 40px;
+  width: 800px;
   margin: 0 auto;
-  background-color: #8AC75A;
+  background-color: #00d235;
   padding: 20px 0 20px 0;
   border-radius: 20px;
 }
@@ -114,6 +124,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: left;
   font-size: 30px;
   margin-top: 30px;
   margin-bottom: 50px;
@@ -157,6 +168,7 @@
 /*  ボタン  */
 .gear-tiken {
   font-size: 40px;
+  padding-bottom: 80px;
 }
 
 .gear-tiken p {
@@ -169,10 +181,10 @@
   display: inline-block;
   padding: 0.25em 0.5em;
   text-decoration: none;
-  color: #FFF;
-  background: #fd9535;
+  color: #333;
+  background: #00d235;
   /*背景色*/
-  border-bottom: solid 2px #d27d00;
+  border-bottom: solid 2px #037720;
   /*少し濃い目の色に*/
   border-radius: 4px;
   /*角の丸み*/
@@ -182,7 +194,7 @@
 }
 
 .btn-square-pop:hover {
-  border-bottom: solid 2px #fd9535;
+  border-bottom: solid 2px #00d235;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
@@ -193,6 +205,8 @@
 
 .man {
   margin-top: 50px;
+  font-size: 36px;
+  margin-bottom: 50px;
 }
 
 .man-work {
@@ -220,4 +234,78 @@
 
 .man-work-img img {
   width: 250px;
+}
+
+/* card */
+.card {
+  width: 300px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px #ccc;
+          box-shadow: 0 2px 5px #ccc;
+}
+
+.card-img {
+  border-radius: 5px 5px 0 0;
+  max-width: 80%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.card-text {
+  color: #777;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 1000px;
+}
+
+img {
+  margin-top: 50px;
+}
+
+.m-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align-last: left;
+  font-size: 30px;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+
+.m-list ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.m-list ul li {
+  padding: 5px 0;
 }
