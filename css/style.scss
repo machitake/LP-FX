@@ -157,7 +157,14 @@ $font-color: #333;
   margin:0 auto;
   text-align:center;
   background: #00d235;
-  color: #fff;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  a{
+    color: #fff;
+  }
+  
 }
 
 .can {
@@ -182,4 +189,127 @@ $font-color: #333;
     border-bottom: 5px solid #00c2cb
   }
 
+  .about-text {
+    margin-top: 30px;
+    p {
+      font-size: 30px; 
+    }
+  }
+
+  .about-h {
+    width: 820px;
+    font-size: 55px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #00c2cb;
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 10px;
+    position: relative;
+
+    &::before{
+      content: "";
+      position: absolute;
+      bottom: -70px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 40px solid transparent;
+      border-top: 30px solid #00c2cb;   /* 好みで色を変えてください */  
+    }
+  }
+
+  .about-img {
+
+    img {
+      width: 850px;
+      margin-top: 80px;
+    }
+    
+  }
+}
+
+
+.step {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.step-h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #00c2cb;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: #fff;
+  width: 100%;
+  position: relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 40px solid transparent;
+    border-top: 30px solid #00c2cb;   /* 好みで色を変えてください */  
+  }
+
+  
+
+  h2 {
+    font-size: 85px;
+    color:#ffde59;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    width: 500px;
+
+    .t {
+      color: #fff;
+      font-size: 35px;
+      position: absolute;
+      top: 45px;
+      left: 30%;
+    }
+
+    .x {
+      font-size: 200px;
+    }
+  }
+}
+
+
+.card {
+
+  margin-top: 100px;
+  .card-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid rgb(168, 158, 158);
+
+    .card-img {
+
+      img {
+        width: 500px;
+      }
+      
+    }
+
+    .card-text {
+
+      width: 500px;
+      h2 {
+        font-size: 100px;
+        font-weight: bold;
+        color: #00c2cb;
+      }
+
+      p {
+        margin-top: 50px;
+      }
+    }
+  }
 }
