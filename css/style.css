@@ -61,6 +61,22 @@ p {
   padding: 0 0 30px 0;
 }
 
+.main {
+  position: relative;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: 40px solid transparent;
+  border-top: 30px solid #fff;
+  /* 好みで色を変えてください */
+}
+
 .top {
   background: #00c2cb;
   padding-bottom: 100px;
@@ -69,7 +85,7 @@ p {
 .top-catch h1 {
   font-size: 60px;
   text-align: center;
-  padding: 80px 0 0;
+  padding: 100px 0 0;
   color: #fff;
 }
 
@@ -289,4 +305,31 @@ p {
 
 .card .card-list .card-text p {
   margin-top: 50px;
+}
+
+.karo {
+  margin-top: 50px;
+  padding-top: 100px;
+  background: #F4F4F4;
+}
+
+.karo h2 {
+  color: #fff;
+  font-size: 55px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  width: 800px;
+  background-color: #00c2cb;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.karo p {
+  font-size: 30px;
+}
+
+.karo p span {
+  font-weight: bold;
+  font-size: 40px;
 }
