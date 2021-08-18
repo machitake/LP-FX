@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="./css/animate.css">
 
     <!-- original -->
+    <link type="text/css" rel="stylesheet" href="./css/silk/slick.css">
+    <link type="text/css" rel="stylesheet" href="./css/silk/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js"></script>
 
@@ -58,11 +60,27 @@
 
             <p>＼毎月20万円の収入UPをあなたへ／</p>
             
-            <input type="email" name="email" autocomplete="email" class="mailf" placeholder="こちらにメールアドレスを入力してください">
+           <!-- LPごとにフォーム内容(POST先)が異なりますのでご注意ください(成約率等が正しく集計されません) -->
+            <!-- 案件設定(成約フォーム、支払方法等)を変更するとフォームも変化しますので、その際は再設置をお願い致します -->
+            <!-- 設置ページの文字コードはUTF-8である必要があります -->
+            <!-- 必ず動作テストを行ってからご利用ください -->
+            <!-- ココから -->
+            <script>
+                (function(e,t,n){var a=t.getElementsByTagName(n)[0],c=t.createElement(n);
+                    c.async=!0,c.src="https://cml-af.biz/tm/ktm.js?lid=44367&t="+(new Date).getTime(),
+                    a.parentNode.insertBefore(c,a)})(window,document,"script");
+            </script>
 
-            <div class="btn">
-                <a href="">今すぐに「ギアツール」を<br><span class="text-b">無料で体験する</span></a>
-            </div>
+            <form action="https://cml-af.biz/customer/contracts/add/44367" method="post">
+            <input type="hidden" name="data[CustomerContract][confirm]" value="1" /> <!-- ←削除すると動作しません -->
+            
+            <input name="data[CustomerContract][email]" type="text" class="mailf" placeholder="こちらにメールアドレスを入力してください">
+            
+            <button type="submit" class="btn btn-reset">今すぐに「ギアツール」を<br><span class="text-b">無料で体験する</button>
+         
+            
+            </form>
+            <!-- ココまで -->
             <div class="can">※キャンペーンは予告なく終了する可能性があります</div>
 
         </div>
@@ -108,8 +126,7 @@
                 </div>
                 <div class="card-text">
                     <h2>STEP2</h2>
-                    <p>毎月最低20万円が<br>
-                        あなたの口座に入金</p>
+                    <p>ギアツールを<br>スマホで起動する</p>
                 </div>
             </div>
 
@@ -119,7 +136,7 @@
                 </div>
                 <div class="card-text">
                     <h2>STEP3</h2>
-                    <p>ギアツールを<br>スマホで起動する</p>
+                    <p>毎月最低20万円が<br>あなたの口座に入金</p>
                 </div>
             </div>
         </div>
@@ -138,7 +155,119 @@
         </div>
     </div>
 
+    <div class="nayami bg-w inner">
+        <h2>あなたのお金の悩み<br><span>今すぐに解消できます！</span></h2>
 
+
+        <div class="nayami-container">
+            <img src="./img/nayami-1.jpg" alt="">
+            <p>やばい！お金がない！</p>
+            <img src="./img/nayami-2.jpg" alt="">
+            <p>ギアツールをスマホで起動</p>
+            <img src="./img/nayami-3.jpg" alt="">
+            <p>短期間で不労収入GET！</p>
+        </div>
+        
+    </div>
+
+    <div class="simple">
+        <div class="p">
+            <p>すごく、シンプル</p><p>すごく、カンタン</p> 
+        </div>
+
+        <p class="p-1">だから</p>           
+
+        <h2>誰でも、毎月<span>20</span>万円以上</h2>
+
+    </div>
+
+    <div class="card inner mb">
+        <div class="card-list">
+            <div class="card-img">
+                <img src="https://github.com/machitake/LP-FX/blob/master/img/about-2.jpg?raw=true" alt="">
+            </div>
+            <div class="card-text line">
+                <p>満足度No,1の<br>サポート体制</p>
+            </div>
+        </div>
+
+        <div class="card-list">
+            <div class="card-img">
+                <img src="https://github.com/machitake/LP-FX/blob/master/img/about-2.jpg?raw=true" alt="">
+            </div>
+            <div class="card-text line">
+                <p>面倒な作業は<br>一切、必要なし</p>
+            </div>
+        </div>
+
+        <div class="card-list">
+            <div class="card-img">
+                <img src="https://github.com/machitake/LP-FX/blob/master/img/about-2.jpg?raw=true" alt="">
+            </div>
+            <div class="card-text line">
+                <p>24時間365日<br>稼ぎ続けるを目指そう！</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about review">
+
+        <div class="inner">
+            <h2>みんなこんなに稼いでます<br>次はあなたの番です</h2>
+
+
+            <div class="review-img">
+                <img src="./img/review-all-3.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="about review">
+
+        <div class="inner">
+            <h2>証拠となる実績大公開！</h2>
+            <p>これまで、ギアツールを<br>2年近くリアルに使用した利益を<br>実際にご紹介します。</p>
+        </div>
+
+        <div class="slider">
+            <div class="card_bottom-item">
+                <img src="./img/2019.11.png" alt="">
+            </div>
+            <div class="card_bottom-item">
+                <img src="./img/2019.12.png" alt="">
+            </div>
+            <div class="card_bottom-item">
+                <img src="./img/2020.01.png" alt="">
+            </div>
+            <div class="card_bottom-item">
+                <img src="./img/2020.01.png" alt="">
+            </div>
+            <div class="card_bottom-item">
+                <img src="./img/2020.01.png" alt="">
+            </div>
+            <div class="card_bottom-item">
+                <img src="./img/2020.01.png" alt="">
+            </div>
+            <div class="card_bottom-item">
+                <img src="./img/2020.01.png" alt="">
+            </div>
+            <div class="card_bottom-item">
+                <img src="./img/2020.01.png" alt="">
+            </div>
+            <div class="card_bottom-item">
+                <img src="./img/2020.01.png" alt="">
+            </div>
+        </div>
+        
+
+
+        <div class="work inner">
+            <img src="./img/work.png" alt="">
+        </div>
+    </div>
 
     <div class="top">
 
@@ -163,12 +292,29 @@
             <h2>ご安心ください<br>あなたからは1円も頂きません！</h2>
 
             <p>＼毎月20万円の収入UPをあなたへ／</p>
-            
-            <input type="email" name="email" autocomplete="email" class="mailf" placeholder="こちらにメールアドレスを入力してください">
 
-            <div class="btn">
-                <a href="">今すぐに「ギアツール」を<br><span class="text-b">無料で体験する</span></a>
-            </div>
+            <!-- LPごとにフォーム内容(POST先)が異なりますのでご注意ください(成約率等が正しく集計されません) -->
+            <!-- 案件設定(成約フォーム、支払方法等)を変更するとフォームも変化しますので、その際は再設置をお願い致します -->
+            <!-- 設置ページの文字コードはUTF-8である必要があります -->
+            <!-- 必ず動作テストを行ってからご利用ください -->
+            <!-- ココから -->
+            <script>
+                (function(e,t,n){var a=t.getElementsByTagName(n)[0],c=t.createElement(n);
+                    c.async=!0,c.src="https://cml-af.biz/tm/ktm.js?lid=44367&t="+(new Date).getTime(),
+                    a.parentNode.insertBefore(c,a)})(window,document,"script");
+            </script>
+
+            <form action="https://cml-af.biz/customer/contracts/add/44367" method="post">
+            <input type="hidden" name="data[CustomerContract][confirm]" value="1" /> <!-- ←削除すると動作しません -->
+            
+            <input name="data[CustomerContract][email]" type="text" class="mailf" placeholder="こちらにメールアドレスを入力してください">
+            
+            <button type="submit" class="btn btn-reset">今すぐに「ギアツール」を<br><span class="text-b">無料で体験する</button>
+         
+            
+            </form>
+            <!-- ココまで -->
+                        
             <div class="can">※キャンペーンは予告なく終了する可能性があります</div>
 
         </div>
@@ -179,6 +325,8 @@
 
 
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script type="text/javascript" src="./js/slick.min.js"></script>   
+    <script src="./js/script.js"></script>
 </body>
 </html>

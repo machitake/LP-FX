@@ -51,6 +51,10 @@ p {
   padding-bottom: 10px;
 }
 
+.mb {
+  margin-bottom: 80px;
+}
+
 /*============================*/
 .bg {
   background: url(/img/white-box-bg.jpeg);
@@ -155,14 +159,11 @@ p {
   margin: 0 auto;
   text-align: center;
   background: #00d235;
+  color: #fff;
 }
 
 .btn:hover {
   opacity: 0.6;
-}
-
-.btn a {
-  color: #fff;
 }
 
 .can {
@@ -182,6 +183,7 @@ p {
   padding-bottom: 30px;
   margin: 0 auto;
   width: 800px;
+  line-height: 60px;
   border-bottom: 5px solid #00c2cb;
 }
 
@@ -294,7 +296,7 @@ p {
 }
 
 .card .card-list .card-text {
-  width: 500px;
+  width: 700px;
 }
 
 .card .card-list .card-text h2 {
@@ -305,6 +307,14 @@ p {
 
 .card .card-list .card-text p {
   margin-top: 50px;
+}
+
+.card .card-list .line {
+  line-height: 90px;
+}
+
+.card .card-list .line p {
+  font-size: 60px;
 }
 
 .karo {
@@ -332,4 +342,155 @@ p {
 .karo p span {
   font-weight: bold;
   font-size: 40px;
+}
+
+.nayami {
+  padding: 80px auto;
+  width: 1200px;
+}
+
+.nayami h2 {
+  font-size: 55px;
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+
+.nayami h2 span {
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.nayami img {
+  width: 700px;
+}
+
+.nayami p {
+  padding: 30px;
+  color: #fff;
+  background: #69A5E0;
+  margin: 30px 0 80px 0;
+  width: 800px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.nayami-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.simple {
+  margin-bottom: 50px;
+  background-color: #00c2cb;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #fff;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.simple::before {
+  content: "";
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: 40px solid transparent;
+  border-top: 30px solid #00c2cb;
+  /* 好みで色を変えてください */
+}
+
+.simple .p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #00c2cb;
+  width: 700px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+}
+
+.simple .p p {
+  background-color: #fff;
+  padding: 15px 10px;
+}
+
+.simple .p-1 {
+  font-size: 55px;
+  margin-top: 30px;
+}
+
+.simple h2 {
+  font-size: 75px;
+  margin-top: 30px;
+  color: #ffde59;
+  font-weight: bold;
+}
+
+.simple h2 span {
+  font-size: 90px;
+}
+
+.review {
+  padding-bottom: 80px;
+  background-color: #fff;
+}
+
+.review h2 {
+  margin-bottom: 80px;
+}
+
+.slider {
+  margin: 50px auto;
+  width: 90%;
+  height: auto;
+  opacity: 0;
+}
+
+.card_bottom-item img {
+  width: 90%;
+  height: auto;
+  margin: 0 10px;
+}
+
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+
+.slick-initialized {
+  opacity: 1;
+}
+
+.slick-dots {
+  bottom: -50px;
+}
+
+.slick-slide img {
+  display: inline;
+}
+
+@media (max-width: 767px) {
+  .slick-prev {
+    left: -10px;
+  }
+  .slick-next {
+    right: -10px;
+  }
+}
+
+.work {
+  margin-top: 100px;
 }

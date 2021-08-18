@@ -35,3 +35,20 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+
+.btn-reset {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif; /* 書体もリセットしています。不要であれば削除を */
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: normal;
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0,0,0,0); /* iOSタップ時の挙動を調整 */
+}
