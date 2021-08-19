@@ -526,3 +526,47 @@ $font-color: #333;
 .work {
   margin-top: 100px;
 }
+
+.bgw {
+  background-color: #F5F9FB;
+}
+
+.ima {
+  background-color: #fff;
+  color: #00c2cb;
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 40px solid transparent;
+    border-top: 30px solid #fff;   /* 好みで色を変えてください */  
+  }
+
+  p {
+    font-size: 60px;
+  }
+}
+
+.imagori {
+  background-color: #fff;
+  color: #00c2cb;
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 40px solid transparent;
+    border-top: 30px solid #fff;   /* 好みで色を変えてください */  
+  }
+}
