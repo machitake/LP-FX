@@ -45,6 +45,10 @@ $font-color: #333;
     max-width: 100%;
     text-align: center;
     margin: 0 auto;
+
+      @include mq('sp') {
+        width: 90%;
+      }
   }
 
   .mt20{
@@ -78,16 +82,21 @@ $font-color: #333;
 /*============================*/
 
 .bg {
-  background: url(/img/white-box-bg.jpeg);
+  background-color: #fff;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 0 0 30px 0;
+  
 }
 
 .main {
 
+  img {
+    width: 100%;
+  }
+
+  
   position: relative;
   &::before{
     content: "";
@@ -97,17 +106,36 @@ $font-color: #333;
     transform: translateX(-50%);
     border: 40px solid transparent;
     border-top: 30px solid #fff;   /* 好みで色を変えてください */  
+
+      @include mq('sp') {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 20px solid transparent;
+        border-top: 15px solid #fff;  
+      }
   }
 }
 
 .top {
   background: #00c2cb;
   padding-bottom: 100px;
+    @include mq('sp') {
+      padding-bottom: 20px;
+    }
 }
 
 .top-catch {
   h1 {
     font-size: 60px;
+
+      @include mq('sp') {
+        font-size: 30px;
+        padding-top: 40px;
+      }
+
     text-align: center;
     padding: 100px 0 0;
     color: #fff;
@@ -119,6 +147,11 @@ $font-color: #333;
     padding: 10px 0;
     color: #ffde59;
     margin-bottom: 80px;
+
+      @include mq('sp') {
+        font-size: 25px;
+        margin-bottom: 30px;
+      }
   }
 }
 
@@ -131,6 +164,11 @@ $font-color: #333;
     padding-top: 50px;
     font-size: 50px;
 
+      @include mq('sp') {
+        font-size: 20px;
+        padding-top: 35px;
+      }
+
     span {
       color: red;
     }
@@ -139,6 +177,9 @@ $font-color: #333;
   p {
     margin-top: 30px;
     color: red;
+      @include mq('sp') {
+        font-size: 18px;
+      }
   }
 }
 
@@ -149,6 +190,10 @@ $font-color: #333;
   text-align: left;
   font-size: 30px;
   margin-top: 30px;
+
+    @include mq('sp') {
+      font-size: 20px;
+    }
 
   .ul{
     list-style: disc;
@@ -165,16 +210,29 @@ $font-color: #333;
   margin-bottom:20px;
   text-align:center;
   border:solid 2px #AEAEAE;
+  max-width: 80%;
+    @include mq('sp') {
+      margin-bottom: 10px;
+      padding: 10px 0;
+      height: auto;
+      font-size: 12px;
+    }
 }
 
 .btn {
   width: 820px; 
   padding: 20px 0;
   font-size:40px; 
+
+    @include mq('sp') {
+      font-size: 20px;
+      padding: 10px 0;
+    }
   border-radius:5px;
   margin:0 auto;
   text-align:center;
   background: #00d235;
+  max-width: 80%;
 
 
   &:hover {
@@ -187,12 +245,18 @@ $font-color: #333;
 
 .can {
   font-size: 20px;
-  color: #AEAEAE
+  color: #AEAEAE;
+    @include mq('sp') {
+      font-size: 10px;
+    }
 }
 
 .text-b {
   font-weight: bold;
   font-size: 45px;
+    @include mq('sp') {
+      font-size: 25px;
+    }
 }
 
 
@@ -205,13 +269,27 @@ $font-color: #333;
     margin: 0 auto;
     width: 800px;
     line-height: 60px;
-    border-bottom: 5px solid #00c2cb
+    border-bottom: 5px solid #00c2cb;
+    max-width: 100%;
+
+      @include mq('sp') {
+        font-size: 24px;
+        padding: 10px;
+        margin-top: 30px;
+        line-height: 40px;
+      }
   }
 
   .about-text {
     margin-top: 30px;
+      @include mq('sp') {
+        margin-top: 40px;
+      }
     p {
       font-size: 30px; 
+        @include mq('sp') {
+          font-size: 20px;
+        }
     }
   }
 
@@ -225,6 +303,12 @@ $font-color: #333;
     padding: 20px 0;
     border-radius: 10px;
     position: relative;
+    max-width: 100%;
+
+      @include mq('sp') {
+        font-size: 24px;
+        line-height: 40px;
+      }
 
     &::before{
       content: "";
@@ -234,6 +318,16 @@ $font-color: #333;
       transform: translateX(-50%);
       border: 40px solid transparent;
       border-top: 30px solid #00c2cb;   /* 好みで色を変えてください */  
+
+      @include mq('sp') {
+        content: "";
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 20px solid transparent;
+      border-top: 15px solid #00c2cb;  
+      }
     }
   }
 
@@ -242,6 +336,11 @@ $font-color: #333;
     img {
       width: 850px;
       margin-top: 80px;
+      max-width: 100%;
+
+        @include mq('sp') {
+          margin-top: 30px;
+        }
     }
     
   }
@@ -251,6 +350,7 @@ $font-color: #333;
 .step {
   text-align: center;
   margin: 0 auto;
+  
 }
 
 .step-h1 {
@@ -263,6 +363,8 @@ $font-color: #333;
   width: 100%;
   position: relative;
 
+    
+
   &::before{
     content: "";
     position: absolute;
@@ -271,6 +373,16 @@ $font-color: #333;
     transform: translateX(-50%);
     border: 40px solid transparent;
     border-top: 30px solid #00c2cb;   /* 好みで色を変えてください */  
+    
+    @include mq('sp') {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 20px solid transparent;
+      border-top: 15px solid #00c2cb;  
+    }
   }
 
   
@@ -282,6 +394,10 @@ $font-color: #333;
     position: relative;
     display: inline-block;
     width: 500px;
+    max-width: 100%;
+      @include mq('sp') {
+        font-size: 50px;
+      }
 
     .t {
       color: #fff;
@@ -289,18 +405,32 @@ $font-color: #333;
       position: absolute;
       top: 45px;
       left: 30%;
+
+        @include mq('sp') {
+          font-size: 20px;
+          top: -30px;
+          left: 30px;
+        }
     }
 
     .x {
       font-size: 200px;
+
+        @include mq('sp') {
+          font-size: 40px;
+        }
     }
   }
 }
 
 
 .card {
-
+  
   margin-top: 100px;
+
+    @include mq('sp') {
+      margin-top: 50px;
+    }
   .card-list {
     display: flex;
     justify-content: space-around;
@@ -309,11 +439,22 @@ $font-color: #333;
     padding-bottom: 20px;
     border-bottom: 4px solid rgb(168, 158, 158);
 
+      @include mq('sp') {
+        display: block;
+        border: 3px solid rgb(168, 158, 158);
+        margin-top: 0;
+        margin-bottom: 50px;
+      }
+
 
     .card-img {
 
       img {
         width: 500px;
+        max-width: 90%;
+          @include mq('sp') {
+            margin-top: 20px;
+          }
       }
       
     }
@@ -321,14 +462,24 @@ $font-color: #333;
     .card-text {
 
       width: 700px;
+      max-width: 100%;
       h2 {
         font-size: 100px;
         font-weight: bold;
         color: #00c2cb;
+
+          @include mq('sp') {
+            font-size: 50px;
+            margin-top: 20px;
+          }
       }
 
       p {
         margin-top: 50px;
+          @include mq('sp') {
+            margin-top: 20px;
+            font-size: 30px;
+          }
       }
     }
 
@@ -349,6 +500,21 @@ $font-color: #333;
   margin-top: 50px;
   padding-top: 100px;
   background: #F4F4F4;
+  margin: 0 auto;
+  text-align: center;
+
+    @include mq('sp') {
+      padding-top: 50px;
+    }
+
+
+  img {
+    max-width: 100%;
+      @include mq('sp') {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+  }
 
   h2 {
     color: #fff;
@@ -357,9 +523,15 @@ $font-color: #333;
     padding-bottom: 30px;
     margin: 0 auto;
     width: 800px;
+    max-width: 100%;
     background-color:#00c2cb;
     border-radius: 20px;
     margin-bottom: 50px;
+
+      @include mq('sp') {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
     
     
   }
@@ -367,9 +539,16 @@ $font-color: #333;
   p {
     font-size: 30px;
 
+      @include mq('sp') {
+        font-size: 16px;
+      }
+
     span {
       font-weight: bold;
       font-size: 40px;
+        @include mq('sp') {
+          font-size: 30px;
+        }
     }
   }
 }
@@ -378,20 +557,31 @@ $font-color: #333;
 .nayami {
   padding: 80px auto;
   width: 1200px;
+  max-width: 100%;
 
   h2 {
     font-size: 55px;
     padding-top: 80px;
     margin-bottom: 80px;
 
+      @include mq('sp') {
+        font-size: 24px;
+        padding-top: 40px;
+        margin-bottom: 40px;
+      }
+
     span {
       font-size: 65px;
       font-weight: bold;
+        @include mq('sp') {
+          font-size: 30px;
+        }
     }
   }
 
   img {
     width: 700px;
+    max-width: 100%;
   }
 
   p {
@@ -402,7 +592,14 @@ $font-color: #333;
     width: 800px;
     border-radius: 10px;
     font-weight: bold;
-    
+    max-width: 90%;
+
+      @include mq('sp') {
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding: 10px;
+      }
   }
 }
 
@@ -422,6 +619,10 @@ $font-color: #333;
   position: relative;
   text-align: center;
 
+    @include mq('sp') {
+      margin-top: 30px;
+    }
+
   &::before{
     content: "";
     position: absolute;
@@ -430,10 +631,23 @@ $font-color: #333;
     transform: translateX(-50%);
     border: 40px solid transparent;
     border-top: 30px solid #00c2cb;   /* 好みで色を変えてください */  
+
+    @include mq('sp') {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 20px solid transparent;
+      border-top: 15px solid #00c2cb;  
+    }
   }
 
   .p {
     display: flex;
+      @include mq('sp') {
+        max-width: 90%;
+      }
     color: #00c2cb;
     width: 700px;
     justify-content: space-around;
@@ -442,12 +656,21 @@ $font-color: #333;
     p {
       background-color: #fff;
       padding: 15px 10px;
+
+        @include mq('sp') {
+          font-size: 16px;
+          margin-top: 20px;
+        }
     }
   }
 
   .p-1 {
     font-size: 55px;
     margin-top: 30px;
+
+      @include mq('sp') {
+        font-size: 40px;
+      }
   }
 
   h2 {
@@ -456,8 +679,17 @@ $font-color: #333;
     color: #ffde59;
     font-weight: bold;
 
+      @include mq('sp') {
+        font-size: 30px;
+        margin-top: 10px;
+      }
+
     span {
       font-size: 90px;
+
+        @include mq('sp') {
+          font-size: 40px;
+        }
     }
   }
 }
@@ -466,6 +698,10 @@ $font-color: #333;
 .review {
   padding-bottom: 80px;
   background-color: #fff;
+
+  img {
+    max-width: 100%;
+  }
 
   h2 {
     margin-bottom: 80px;
@@ -557,6 +793,7 @@ $font-color: #333;
   background-color: #fff;
   color: #00c2cb;
   padding: 40px 0;
+  margin-top: 80px;
   text-align: center;
   position: relative;
 
@@ -570,3 +807,100 @@ $font-color: #333;
     border-top: 30px solid #fff;   /* 好みで色を変えてください */  
   }
 }
+
+
+
+
+
+.ima-card {
+  margin-top: 80px;
+  position: relative;
+
+  .koko {
+    position: absolute;
+    left: 7%;
+    font-size: 30px;
+    color: #fff;
+    background-color: red;
+    margin-top: 20px;
+    padding: 10px 10px;
+
+  }
+}
+
+
+.ima-card-list {
+  display: flex;
+    @include mq('sp') {
+      display: block;
+    }
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ima-card-item {
+
+  width: 300px;
+  border: solid 3px #00c2cb;
+
+  .ima-card-title {
+    font-size: 50px;
+    font-weight: bold;
+    width: 200px;
+    border-bottom: 2px solid #00c2cb;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    
+  }
+
+  .ima-card-text {
+    font-size: 25px;
+    color:rgb(54, 53, 53);
+    margin-bottom: 50px;
+  }
+
+  .ima-card-img {
+    padding-bottom: 30px;
+
+    img {
+      width: 200px;
+    }
+    
+  }
+}
+
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  a {
+    text-decoration: none;
+    color:rgb(54, 53, 53);
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+
+//点滅
+
+.blink {
+	-webkit-animation: blink 1s ease infinite;
+	animation: blink 2s ease infinite;
+}
+@-webkit-keyframes blink {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes blink {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+// *{outline:1px solid #0000FF}
