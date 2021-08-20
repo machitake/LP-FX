@@ -92,31 +92,32 @@ $font-color: #333;
 
 .main {
 
+  background-color: #fff;
   img {
     width: 100%;
   }
 
   
-  position: relative;
-  &::before{
-    content: "";
-    position: absolute;
-    bottom: -70px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 40px solid transparent;
-    border-top: 30px solid #fff;   /* 好みで色を変えてください */  
+  // position: relative;
+  // &::before{
+  //   content: "";
+  //   position: absolute;
+  //   bottom: -70px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   border: 40px solid transparent;
+  //   border-top: 30px solid #fff;   /* 好みで色を変えてください */  
 
-      @include mq('sp') {
-        content: "";
-        position: absolute;
-        bottom: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-        border: 20px solid transparent;
-        border-top: 15px solid #fff;  
-      }
-  }
+  //     @include mq('sp') {
+  //       content: "";
+  //       position: absolute;
+  //       bottom: -30px;
+  //       left: 50%;
+  //       transform: translateX(-50%);
+  //       border: 20px solid transparent;
+  //       border-top: 15px solid #fff;  
+  //     }
+  // }
 }
 
 .top {
@@ -486,8 +487,15 @@ $font-color: #333;
     .line {
       line-height: 90px; 
 
+        @include mq('sp') {
+          line-height: 40px;
+        }
+
       p {
         font-size: 60px;
+          @include mq('sp') {
+            font-size: 30px;
+          }
       }
       
     }
@@ -660,6 +668,7 @@ $font-color: #333;
         @include mq('sp') {
           font-size: 16px;
           margin-top: 20px;
+          padding-bottom: 5px;
         }
     }
   }
@@ -670,6 +679,8 @@ $font-color: #333;
 
       @include mq('sp') {
         font-size: 40px;
+        margin-top: 10px;
+        padding-bottom: 0;
       }
   }
 
@@ -681,7 +692,8 @@ $font-color: #333;
 
       @include mq('sp') {
         font-size: 30px;
-        margin-top: 10px;
+        margin-top: 0;
+
       }
 
     span {
@@ -705,6 +717,10 @@ $font-color: #333;
 
   h2 {
     margin-bottom: 80px;
+
+      @include mq('sp') {
+        margin-bottom: 40px;
+      }
   }
 }
 
@@ -723,10 +739,12 @@ $font-color: #333;
     width: 90%;
     height: auto;
     margin:0 10px;
+
+      @include mq('sp') {
+        margin: 0 17px;
+      }
   }
 }
-
-
 
 
 /*slick setting*/
@@ -765,14 +783,36 @@ $font-color: #333;
 
 .bgw {
   background-color: #F5F9FB;
+
+    @include mq('sp') {
+      padding-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    p {
+        @include mq('sp') {
+          font-size: 20px;
+        }
+    }
 }
 
 .ima {
   background-color: #fff;
   color: #00c2cb;
-  padding: 40px 0;
+  padding-top: 60px;
   text-align: center;
   position: relative;
+    @include mq('sp') {
+      padding-top: 10px;
+    }
+
+  h2 {
+    font-size: 50px;
+
+      @include mq('sp') {
+        font-size: 24px;
+      }
+  }
 
   &::before{
     content: "";
@@ -797,6 +837,18 @@ $font-color: #333;
   text-align: center;
   position: relative;
 
+    @include mq('sp') {
+      margin-top: 30px;
+    }
+
+  p {
+    @include mq('sp') {
+      font-size: 24px;
+    }
+  }
+
+ 
+
   &::before{
     content: "";
     position: absolute;
@@ -816,6 +868,10 @@ $font-color: #333;
   margin-top: 80px;
   position: relative;
 
+    @include mq('sp') {
+      margin-top: 30px;
+    }
+
   .koko {
     position: absolute;
     left: 7%;
@@ -824,6 +880,14 @@ $font-color: #333;
     background-color: red;
     margin-top: 20px;
     padding: 10px 10px;
+
+      @include mq('sp') {
+        top: -13px;
+        font-size: 10px;
+        left: 50%;
+        padding: 5px 40px;
+        transform: translateX(-50%);
+      }
 
   }
 }
@@ -842,6 +906,11 @@ $font-color: #333;
 
   width: 300px;
   border: solid 3px #00c2cb;
+
+    @include mq('sp') {
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
 
   .ima-card-title {
     font-size: 50px;

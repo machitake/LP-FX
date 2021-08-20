@@ -71,36 +71,11 @@ p {
 }
 
 .main {
-  position: relative;
+  background-color: #fff;
 }
 
 .main img {
   width: 100%;
-}
-
-.main::before {
-  content: "";
-  position: absolute;
-  bottom: -70px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  border: 40px solid transparent;
-  border-top: 30px solid #fff;
-  /* 好みで色を変えてください */
-}
-
-@media (max-width: 767px) {
-  .main::before {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    border: 20px solid transparent;
-    border-top: 15px solid #fff;
-  }
 }
 
 .top {
@@ -525,8 +500,20 @@ p {
   line-height: 90px;
 }
 
+@media (max-width: 767px) {
+  .card .card-list .line {
+    line-height: 40px;
+  }
+}
+
 .card .card-list .line p {
   font-size: 60px;
+}
+
+@media (max-width: 767px) {
+  .card .card-list .line p {
+    font-size: 30px;
+  }
 }
 
 .karo {
@@ -732,6 +719,7 @@ p {
   .simple .p p {
     font-size: 16px;
     margin-top: 20px;
+    padding-bottom: 5px;
   }
 }
 
@@ -743,6 +731,8 @@ p {
 @media (max-width: 767px) {
   .simple .p-1 {
     font-size: 40px;
+    margin-top: 10px;
+    padding-bottom: 0;
   }
 }
 
@@ -756,7 +746,7 @@ p {
 @media (max-width: 767px) {
   .simple h2 {
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 0;
   }
 }
 
@@ -783,6 +773,12 @@ p {
   margin-bottom: 80px;
 }
 
+@media (max-width: 767px) {
+  .review h2 {
+    margin-bottom: 40px;
+  }
+}
+
 .slider {
   margin: 50px auto;
   width: 90%;
@@ -794,6 +790,12 @@ p {
   width: 90%;
   height: auto;
   margin: 0 10px;
+}
+
+@media (max-width: 767px) {
+  .card_bottom-item img {
+    margin: 0 17px;
+  }
 }
 
 /*slick setting*/
@@ -831,12 +833,41 @@ p {
   background-color: #F5F9FB;
 }
 
+@media (max-width: 767px) {
+  .bgw {
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bgw p {
+    font-size: 20px;
+  }
+}
+
 .ima {
   background-color: #fff;
   color: #00c2cb;
-  padding: 40px 0;
+  padding-top: 60px;
   text-align: center;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .ima {
+    padding-top: 10px;
+  }
+}
+
+.ima h2 {
+  font-size: 50px;
+}
+
+@media (max-width: 767px) {
+  .ima h2 {
+    font-size: 24px;
+  }
 }
 
 .ima::before {
@@ -864,6 +895,18 @@ p {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .imagori {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .imagori p {
+    font-size: 24px;
+  }
+}
+
 .imagori::before {
   content: "";
   position: absolute;
@@ -881,6 +924,12 @@ p {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .ima-card {
+    margin-top: 30px;
+  }
+}
+
 .ima-card .koko {
   position: absolute;
   left: 7%;
@@ -889,6 +938,17 @@ p {
   background-color: red;
   margin-top: 20px;
   padding: 10px 10px;
+}
+
+@media (max-width: 767px) {
+  .ima-card .koko {
+    top: -13px;
+    font-size: 10px;
+    left: 50%;
+    padding: 5px 40px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 .ima-card-list {
@@ -911,6 +971,13 @@ p {
 .ima-card-item {
   width: 300px;
   border: solid 3px #00c2cb;
+}
+
+@media (max-width: 767px) {
+  .ima-card-item {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 
 .ima-card-item .ima-card-title {
