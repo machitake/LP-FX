@@ -245,7 +245,7 @@ p {
 .about h2 {
   color: #00c2cb;
   font-size: 55px;
-  padding-top: 50px;
+  padding-top: 150px;
   padding-bottom: 30px;
   margin: 0 auto;
   width: 800px;
@@ -343,6 +343,13 @@ p {
 .step {
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 767px) {
+  .step {
+    padding-bottom: 20px;
+  }
 }
 
 .step-h1 {
@@ -419,7 +426,7 @@ p {
 
 @media (max-width: 767px) {
   .step-h1 h2 .x {
-    font-size: 40px;
+    font-size: 60px;
   }
 }
 
@@ -439,9 +446,6 @@ p {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 100px;
   padding-bottom: 20px;
   border-bottom: 4px solid #a89e9e;
@@ -719,7 +723,6 @@ p {
   .simple .p p {
     font-size: 16px;
     margin-top: 20px;
-    padding-bottom: 5px;
   }
 }
 
@@ -789,7 +792,7 @@ p {
 .card_bottom-item img {
   width: 90%;
   height: auto;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 @media (max-width: 767px) {
@@ -1003,6 +1006,7 @@ p {
 
 .ima-card-item .ima-card-img img {
   width: 200px;
+  height: 250px;
 }
 
 footer {
@@ -1010,11 +1014,12 @@ footer {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  color: #C0C0C0;
 }
 
 footer a {
   text-decoration: none;
-  color: #363535;
+  color: #C0C0C0;
 }
 
 footer a:hover {
@@ -1042,4 +1047,8 @@ footer a:hover {
   100% {
     opacity: 1;
   }
+}
+
+.line-h {
+  line-height: 50px;
 }
