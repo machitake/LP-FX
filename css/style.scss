@@ -47,7 +47,7 @@ $font-color: #333;
     margin: 0 auto;
 
       @include mq('sp') {
-        width: 90%;
+        width: 80%;
       }
   }
 
@@ -133,7 +133,8 @@ $font-color: #333;
     font-size: 60px;
 
       @include mq('sp') {
-        font-size: 30px;
+        font-size: 24px;
+        line-height: 30px;
         padding-top: 40px;
       }
 
@@ -150,7 +151,7 @@ $font-color: #333;
     margin-bottom: 80px;
 
       @include mq('sp') {
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 30px;
       }
   }
@@ -166,7 +167,7 @@ $font-color: #333;
     font-size: 50px;
 
       @include mq('sp') {
-        font-size: 20px;
+        font-size: 16px;
         padding-top: 35px;
       }
 
@@ -179,7 +180,7 @@ $font-color: #333;
     margin-top: 30px;
     color: red;
       @include mq('sp') {
-        font-size: 18px;
+        font-size: 16px;
       }
   }
 }
@@ -193,7 +194,7 @@ $font-color: #333;
   margin-top: 30px;
 
     @include mq('sp') {
-      font-size: 20px;
+      font-size: 16px;
     }
 
   .ul{
@@ -226,7 +227,7 @@ $font-color: #333;
   font-size:40px; 
 
     @include mq('sp') {
-      font-size: 20px;
+      font-size: 16px;
       padding: 10px 0;
     }
   border-radius:5px;
@@ -246,7 +247,8 @@ $font-color: #333;
 
 .can {
   font-size: 20px;
-  color: #AEAEAE;
+  color: #6d6d6d;
+  margin-top: 10px;
     @include mq('sp') {
       font-size: 10px;
     }
@@ -256,7 +258,8 @@ $font-color: #333;
   font-weight: bold;
   font-size: 45px;
     @include mq('sp') {
-      font-size: 25px;
+      font-size: 20px;
+      
     }
 }
 
@@ -276,7 +279,7 @@ $font-color: #333;
     max-width: 100%;
 
       @include mq('sp') {
-        font-size: 24px;
+        font-size: 20px;
         padding: 10px;
         margin-top: 30px;
         line-height: 40px;
@@ -291,7 +294,7 @@ $font-color: #333;
     p {
       font-size: 30px; 
         @include mq('sp') {
-          font-size: 20px;
+          font-size: 18px;
         }
     }
   }
@@ -343,6 +346,7 @@ $font-color: #333;
 
         @include mq('sp') {
           margin-top: 30px;
+          width: 80%;;
         }
     }
     
@@ -461,6 +465,7 @@ $font-color: #333;
         max-width: 90%;
           @include mq('sp') {
             margin-top: 20px;
+            width: 80%;
           }
       }
       
@@ -476,7 +481,7 @@ $font-color: #333;
         color: #00c2cb;
 
           @include mq('sp') {
-            font-size: 50px;
+            font-size: 40px;
             margin-top: 20px;
           }
       }
@@ -485,7 +490,7 @@ $font-color: #333;
         margin-top: 50px;
           @include mq('sp') {
             margin-top: 20px;
-            font-size: 30px;
+            font-size: 20px;
           }
       }
     }
@@ -500,7 +505,7 @@ $font-color: #333;
       p {
         font-size: 60px;
           @include mq('sp') {
-            font-size: 30px;
+            font-size: 20px;
           }
       }
       
@@ -595,7 +600,7 @@ $font-color: #333;
 
   img {
     width: 700px;
-    max-width: 100%;
+    max-width: 80%;
   }
 
   p {
@@ -691,7 +696,7 @@ $font-color: #333;
 
   h2 {
     font-size: 75px;
-    margin-top: 30px;
+    margin-top: 10px;
     color: #ffde59;
     font-weight: bold;
 
@@ -735,6 +740,10 @@ $font-color: #333;
 .slider{
   margin: 50px auto;
   width: 90%;
+
+    @include mq('sp')  {
+      width: 80%;
+    }
   height: auto;
   opacity: 0;
 }
@@ -773,17 +782,38 @@ $font-color: #333;
   
 @include mq('sp') {
   .slick-prev {
-    left: -10px;
+    left: -18px;
   }
 
   .slick-next {
-    right: -10px;
+    right: -18px;
 }
 }
 
 
 .work {
-  margin-top: 100px;
+  margin-top: 20px;
+
+  p {
+    margin-top: 30px;
+    font-size: 50px;
+  }
+}
+
+.jisseki-title {
+
+  margin-top: 130px;
+  font-size: 65px;
+  font-weight: bold;
+  width: 300px;
+  padding-bottom: 8px;
+  border-bottom: 4px solid red;
+
+    @include mq('sp') {
+      font-size: 30px;
+      width: 200px;
+      margin-top: 80px;
+    }
 }
 
 .bgw {
@@ -813,9 +843,16 @@ $font-color: #333;
 
   h2 {
     font-size: 50px;
+    margin: 0 auto;
+    width: 800px;
+    padding-bottom: 30px;
+    line-height: 60px;
+    border-bottom: 5px solid #00c2cb;
+    max-width: 100%;
 
       @include mq('sp') {
-        font-size: 24px;
+        font-size: 20px;
+        padding-bottom: 5px;
       }
   }
 
@@ -933,6 +970,10 @@ $font-color: #333;
     font-size: 25px;
     color:rgb(54, 53, 53);
     margin-bottom: 50px;
+
+      @include mq('sp') {
+        margin-bottom: 30px;
+      }
   }
 
   .ima-card-img {
@@ -942,6 +983,11 @@ $font-color: #333;
     img {
       width: 200px;
       height: 250px;
+
+        @include mq('sp') {
+          width: 180px;
+          height:200px;
+        }
     }
     
   }
@@ -985,4 +1031,6 @@ footer {
 .line-h {
   line-height: 50px;
 }
+
+
 
